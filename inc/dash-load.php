@@ -1,6 +1,6 @@
 <?php 
 
-$dush = $_GET['dush'];
+if(isset($_GET['dush'])) {$dush = $_GET['dush'];}else{exit();}
 
 if ( ini_get( 'zlib.output_compression' ) )
   ini_set( 'zlib.output_compression', 'Off' );
